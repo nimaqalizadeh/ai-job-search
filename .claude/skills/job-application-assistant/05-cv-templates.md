@@ -129,12 +129,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Python Backend Engineer roles:**
+> Python Backend Engineer experienced in designing and delivering data-intensive APIs and business-critical workflow systems with FastAPI, Django, PostgreSQL, Redis, and Docker. Built financial and health applications from domain modeling through production-oriented backend architecture, including auditable accounting, credit-scoring, access-control, notification, and document-processing workflows. Combines hands-on implementation with product ownership and a strong financial-domain background.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Python Backend Engineer roles in financial or data-intensive domains:**
+> Python Backend Engineer with an M.Sc. in Energy Economics and hands-on experience building accounting, credit-assessment, investment-reporting, and operational workflow systems. Designed APIs and data models with FastAPI, Django, PostgreSQL, Redis, and SQLAlchemy, including a dual-measure accounting ledger and versioned credit-scoring engine. Brings a practical combination of backend engineering, financial-domain modeling, auditability, and automation.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

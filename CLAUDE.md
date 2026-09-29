@@ -1,10 +1,9 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Nima Ghasemalizadeh
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+<!-- Personalized by /setup on 2026-09-10. -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Nima Ghasemalizadeh, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +12,69 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Nima Ghasemalizadeh
+- **Location:** Dubai
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
+  | Persian | Native |
+  | English | Fluent |
   <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
   working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
   undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
   lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
   04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed as Backend & AI Developer at Magma AI
+- **LinkedIn headline:** "Backend & AI Developer | Python, FastAPI, Django, PostgreSQL"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **M.Sc. in Energy Economics** (completed 2017) - Kharazmi University
+  - Thesis: "Estimating Value at Risk in the Tehran Stock Exchange Using Conditional Extreme Value Theory"
+  - Topics: risk analysis, financial markets, quantitative economics
+- **B.S. in Chemical Engineering** (completed 2014) - Sharif University of Technology
+  - Thesis: "Design of a Natural Sweetener Extraction Unit from Stevia Leaves"
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Backend & AI Developer** (Mar 2025 - Present) - **Magma AI** (Remote)
+  - Part-time Mar-Jun 2025; full-time from Jul 2025.
+  - Led the design and implementation of a Python/FastAPI gold-accounting application with a dual-measure ledger and approximately 0.1% annual legacy weight-drift removal.
+  - Led the design and implementation of a Django/React health-assessment system with document ingestion, OCR, rule-based scoring, and expert review.
+- **Evaluation Manager / Backend Developer & Product Owner** (Aug 2024 - Jun 2025) - **Stars Research and Technology Fund** (Tehran)
+  - Architected an ERP with 14 domain modules and more than 30 data models using FastAPI, PostgreSQL, and Redis.
+  - Built versioned credit scoring, automated analysis of 13 financial ratios, access control, notifications, auditability, and deployment workflows.
+- **Backend Developer (Freelance)** (Sep 2022 - Aug 2024) - **Various Private Clients** (Tehran)
+  - Delivered Django/React analytics and asynchronous web-scraping/data-ingestion systems.
+- **Investment Analyst** (Oct 2020 - Aug 2022) - **Iran National Innovation Fund** (Tehran)
+  - Evaluated investment and crowdfunding proposals and built an internal portfolio dashboard.
+- **Market Development Analyst** (May 2018 - Sep 2020) - **Kowsar Water Co 116** (Tehran)
+  - Automated daily tender discovery with Python and conducted infrastructure feasibility studies.
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python, SQL, FastAPI, Django/DRF, PostgreSQL, REST API architecture, SQLAlchemy, Pydantic
+- **Secondary:** Redis, Docker, Linux, TypeScript, React, CI/CD, Nginx, Pandas, MySQL, AWS S3
+- **Domain:** Backend systems, accounting and credit workflows, financial analysis, workflow automation, analytics, document-processing health applications
+- **Software:** Git, OpenAPI, JWT/RBAC, SSE, Redis Pub/Sub, Excel, Power BI, Matplotlib
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **AWS Certified AI Practitioner (AIF)** - issued Jul 2026, expires Jul 2029
+- **Advanced Django Web Framework** - issued Jul 2023
+- **Django Web Framework** - issued Sep 2022
+- **Valuation Expert** - issued Jun 2022
+- **Linux Essentials** - issued Jun 2022
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+No peer-reviewed publications are recorded. An internal report on COVID-19 and stock-market risk in the G7 countries is listed under professional experience.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+No awards are recorded.
 
-### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
-
-### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
-
-### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
-
-### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+### Target
+- **Primary role:** Python Backend Engineer
+- **Industries:** Industry-agnostic
+- **Location:** Dubai
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

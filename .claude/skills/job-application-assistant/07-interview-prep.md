@@ -12,46 +12,81 @@ Structure answers as: **Situation** (context), **Task** (your responsibility), *
 
 Keep answers to 1-2 minutes. Be specific. End with what you learned or would do differently.
 
-## Ready-Made STAR Examples
+## STAR Candidates (Complete Manually)
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### Gold dual-measure accounting ledger
+**Source:** Developer CV - Magma AI
+**What happened:** Designed and implemented a ledger that balances every journal line in both currency and milligrams of fine gold, using immutable postings and integer-only numerics to remove approximately 0.1% annual weight drift from the legacy system.
+**Why it matters:** System design, correctness, financial-domain modeling, ownership, concurrency, and debugging questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### Health Assessment System
+**Source:** Developer CV and candidate confirmation - Magma AI
+**What happened:** Led the design and implementation of a Django and React system that ingests patient documents, performs OCR and categorization, applies rule-based scoring, and routes recommendations through expert review.
+**Why it matters:** End-to-end ownership, privacy-sensitive systems, stakeholder workflows, product design, and ambiguity questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### ERP architecture for loan and guarantee workflows
+**Source:** Developer CV and LinkedIn detail - Stars Research and Technology Fund
+**What happened:** Served as Evaluation Manager, Product Owner, and primary Backend Developer while architecting an ERP with 14 domain modules and more than 30 data models.
+**Why it matters:** Architecture, product ownership, translating business requirements, prioritization, and cross-functional leadership questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### Versioned credit scoring and automated financial analysis
+**Source:** Developer CV - Stars Research and Technology Fund
+**What happened:** Built editable, versioned credit-scoring logic and automated statement analysis covering three assessment types, 13 scored ratios, and a weighted credit-ceiling calculation.
+**Why it matters:** Domain modeling, auditability, reproducibility, automation, and working with nontechnical business users.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### Replacement of a Power BI reporting solution
+**Source:** Developer and financial CVs - Freelance
+**What happened:** Replaced a Power BI solution with a Django REST Framework, React, and Pandas dashboard that delivered sub-second loads for heavy cross-departmental visualizations.
+**Why it matters:** Performance optimization, client delivery, technology selection, and measurable-impact questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Automated tender discovery
+**Source:** Developer and financial CVs - Kowsar Water Co 116
+**What happened:** Built a Python crawler that searched tender portals daily, filtered relevant opportunities, and consolidated them into Excel, replacing a manual daily process.
+**Why it matters:** Initiative, early automation experience, understanding users, and operational-efficiency questions.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
 
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+> Prepare this per interview from the actual reason for leaving. Keep it factual, brief, and forward-looking; no reason is recorded in the current profile.
 
 ### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+> Acknowledge the gap directly, connect it to the closest documented experience, and explain a concrete learning path. Never imply production experience that is absent from the profile.
 
 ### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+> Focus on deeper Python backend architecture ownership, reliable data-intensive services, and broader responsibility for technical decisions while remaining hands-on.
 
 ### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
+> No personal weakness is recorded. Prepare a genuine, role-relevant example with a concrete mitigation strategy before the interview; do not invent one from the CV.
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.

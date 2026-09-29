@@ -1,21 +1,11 @@
-%% Example CV - [YOUR_NAME]
-%% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
-%%
-%% SETUP: Run /setup to populate this with your actual information.
-%% Compile with: lualatex main_example.tex
-%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+%% Master CV - Nima Ghasemalizadeh
+%% Comprehensive factual source for role-specific CV tailoring.
+%% Compile with: lualatex -interaction=nonstopmode main_example.tex
 
 \documentclass[11pt,a4paper,sans]{moderncv}
 \moderncvstyle{banking}
 \moderncvcolor{blue}
 
-% Force the name and section headings to render in moderncv blue (color1).
-% Default banking leaves them black: moderncvstylebanking.sty's \colorlet
-% copies (not aliases) the pre-scheme accent colour, so the name colours are
-% frozen before \moderncvcolor runs. Re-let them after. \namefont is the hook
-% every name-style macro routes through, so this also works on moderncv 2.3.1
-% (Debian/Ubuntu apt), which has no \firstnamestyle/\lastnamestyle at all.
 \renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
 \colorlet{firstnamecolor}{color1}
 \colorlet{lastnamecolor}{color1}
@@ -23,156 +13,113 @@
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
-% moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
-% must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
-% \usepackage{hyperref} clashes with the class's own
-% \RequirePackage[unicode]{hyperref}. From 2.4.0 the class passes its options
-% through \PassOptionsToPackage instead, which is what removes that clash.
 \AtEndPreamble{\hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
-    % Keep pdfpagemode=UseNone: this block runs after moderncv's own
-    % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
-    % value here would win and open every CV in fullscreen presentation mode.
+    pdftitle={Nima Ghasemalizadeh - CV},
     pdfpagemode=UseNone,
 }}
 \usepackage[scale=0.80]{geometry}
-\usepackage{import}
+\usepackage{needspace}
 
-% personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Nima}{Ghasemalizadeh}
+\address{Dubai}{}{}
+\phone[mobile]{+971 58 870 2925}
+\email{nimaqalizadeh@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/nima-q-alizadeh}{linkedin.com/in/nima-q-alizadeh}, \href{https://github.com/nimaqalizadeh}{github.com/nimaqalizadeh}}
 
 \begin{document}
 
 \makecvtitle
 
-% ============================================================
-%     PROFILE STATEMENT
-% ============================================================
-
-\vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
-
-% ============================================================
-%     CORE COMPETENCIES
-% ============================================================
+\vspace{4pt}
+\small{Python Backend Engineer experienced in designing and delivering data-intensive APIs and business-critical workflow systems with FastAPI, Django, PostgreSQL, Redis, and Docker. Built financial and health applications from domain modeling through production-oriented architecture, including auditable accounting, credit scoring, access control, notifications, and document-processing workflows. Combines hands-on implementation with product ownership and a strong financial-domain background.}
 
 \section{Core Competencies}
 \vspace{1pt}
 \begin{itemize}
-
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
-
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
-
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
-
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
-
+\item \textbf{Python Backend Engineering}: FastAPI, Django, Django REST Framework, Pydantic v2, SQLAlchemy 2.0/async, asynchronous services, REST API design.
+\item \textbf{Data and Storage}: Advanced SQL, PostgreSQL, MySQL, Redis, schema design, data modeling, Pandas, and Alembic.
+\item \textbf{Reliable Application Design}: Idempotent endpoints, immutable financial postings, audit logs, RBAC, JWT, rate limiting, CSRF protection, and OpenAPI.
+\item \textbf{Infrastructure}: Intermediate Docker and Linux; CI/CD, Nginx, Redis Pub/Sub, SSE, scheduled workloads, and basic \texttt{AWS}/\texttt{AWS} S3.
+\item \textbf{Financial and Data Systems}: Accounting, credit assessment, financial analysis, workflow automation, analytics dashboards, OCR, ingestion, and deduplication.
 \end{itemize}
-
-% ============================================================
-%     PROFESSIONAL EXPERIENCE
-% ============================================================
 
 \section{Professional Experience}
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{8\baselineskip}
+\item{\cventry{Mar 2025 - Present}{Backend \& AI Developer}{Magma AI}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item Led the design and implementation of a Gold Accounting App using Python, FastAPI, SQLAlchemy 2.0, PostgreSQL, and React/TypeScript.
+    \item Designed a dual-measure ledger that balances each journal line independently in currency and milligrams of fine gold.
+    \item Used immutable postings, integer-only numerics, and idempotent, concurrency-safe endpoints to remove approximately 0.1\% annual weight drift from the legacy system.
+    \item Led the design and implementation of a Django and React Health Assessment System with iOS document ingestion, OCR, categorization, GoRules scoring, and expert-reviewed recommendations.
+    \item Worked part-time from Mar-Jun 2025 and full-time from Jul 2025.
 \end{itemize}}}
 
 \vspace{3pt}
-
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{8\baselineskip}
+\item{\cventry{Aug 2024 - Jun 2025}{Evaluation Manager / Backend Developer \& Product Owner}{Stars Research and Technology Fund}{Tehran, Iran}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item Architected a FastAPI, PostgreSQL, and Redis ERP spanning 14 domain modules and more than 30 data models for loan and guarantee workflows.
+    \item Built versioned credit scoring with three assessment types and automated financial analysis covering 13 scored ratios and weighted credit-ceiling calculations.
+    \item Implemented JWT/RBAC and company-scoped permissions, multi-stage approvals, contract generation, audit logging, rate limiting, CSRF protection, and OTP/session expiry.
+    \item Delivered SSE notifications over Redis Pub/Sub, four Dockerized API processes, one scheduler, CI/CD, and payment-schedule monitoring.
 \end{itemize}}}
 
 \vspace{3pt}
-
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{6\baselineskip}
+\item{\cventry{Sep 2022 - Aug 2024}{Backend Developer (Freelance)}{Various Private Clients}{Tehran, Iran}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item Replaced a Power BI solution with a Django REST Framework, React, and Pandas analytics dashboard delivering sub-second loads for heavy cross-departmental visualizations.
+    \item Built asynchronous Python scrapers, a REST API, automated deduplication, and bulk ingestion into MySQL.
+\end{itemize}}}
+
+\vspace{3pt}
+\needspace{6\baselineskip}
+\item{\cventry{Oct 2020 - Aug 2022}{Investment Analyst}{Iran National Innovation Fund}{Tehran, Iran}{}{\vspace{1pt}
+\begin{itemize}
+    \item Built a Django and Matplotlib dashboard for co-investment, crowdfunding, accelerators, and private equity fund holdings.
+    \item Evaluated investment and crowdfunding proposals for credit guarantees, supported guarantee-contract negotiations, and analyzed innovation-financing instruments.
+\end{itemize}}}
+
+\vspace{3pt}
+\needspace{6\baselineskip}
+\item{\cventry{May 2018 - Sep 2020}{Market Development Analyst}{Kowsar Water Co 116}{Tehran, Iran}{}{\vspace{1pt}
+\begin{itemize}
+    \item Automated daily tender discovery with a Python crawler that filtered relevant opportunities and consolidated results in Excel.
+    \item Conducted infrastructure feasibility studies and coordinated technical and financial tender documents.
 \end{itemize}}}
 
 \end{itemize}
-
-% ============================================================
-%     EDUCATION
-% ============================================================
 
 \section{Education}
 \vspace{1pt}
 \begin{itemize}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
+\needspace{5\baselineskip}
+\item{\cventry{Completed 2017}{M.Sc. in Energy Economics}{Kharazmi University}{Tehran, Iran}{}{\vspace{1pt}
+Thesis: \textit{Estimating Value at Risk in the Tehran Stock Exchange Using Conditional Extreme Value Theory}.}}
 \vspace{3pt}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
-
+\needspace{5\baselineskip}
+\item{\cventry{Completed 2014}{B.S. in Chemical Engineering}{Sharif University of Technology}{Tehran, Iran}{}{\vspace{1pt}
+Thesis: \textit{Design of a Natural Sweetener Extraction Unit from Stevia Leaves}.}}
 \end{itemize}
 
-% ============================================================
-%     LANGUAGES
-% ============================================================
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{\texttt{AWS} Certified AI Practitioner (AIF)}, Jul 2026; \textbf{Advanced Django Web Framework}, Jul 2023; \textbf{Django Web Framework}, Sep 2022; \textbf{Linux Essentials}, Jun 2022; \textbf{Valuation Expert}, Jun 2022.}
+\end{itemize}
 
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item{Persian (native), English (fluent).}
 \end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
-\end{itemize}
-
-% ============================================================
-%     REFERENCES
-% ============================================================
 
 \section{References}
 \vspace{1pt}

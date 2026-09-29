@@ -1,6 +1,6 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+<!-- Personalized for Nima Ghasemalizadeh on 2026-09-10. -->
 
 ## Installed portal CLIs (primary for `/scrape`)
 
@@ -13,10 +13,9 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 ## Search Sites
 
 Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+- **linkedin.com/jobs** - LinkedIn job listings filtered to Dubai; also covered by `linkedin-search`
+- **freehire.me** - multi-market technical job aggregator; covered by `freehire-search`
+- **Employer career pages** - searched through WebSearch when no portal CLI is available
 
 Secondary (company career pages via Google):
 - Direct Google searches with `site:` filters for known target companies
@@ -27,34 +26,39 @@ Queries are grouped by priority. Write **each category in every language from yo
 
 **Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Python Backend Engineering
 
 These match your strongest and most desired career direction.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "Python Backend Engineer" Dubai
+site:linkedin.com/jobs "Backend Developer" Python Dubai
+site:linkedin.com/jobs FastAPI Dubai
+site:linkedin.com/jobs Django backend Dubai
+site:linkedin.com/jobs "توسعه دهنده بک اند پایتون" دبی
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Financial and Data-Intensive Backend Systems
 
 These match your domain expertise.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs fintech backend Python Dubai
+site:linkedin.com/jobs banking backend Python Dubai
+site:linkedin.com/jobs "Financial Systems Engineer" Dubai
+site:linkedin.com/jobs credit risk software Python Dubai
+site:linkedin.com/jobs "مهندس نرم افزار مالی" پایتون دبی
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 3: API and Backend Software Engineering
 
 Adjacent roles you could pivot into.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "API Engineer" Python Dubai
+site:linkedin.com/jobs "Software Engineer Backend" Dubai
+site:linkedin.com/jobs PostgreSQL Redis Python Dubai
+site:linkedin.com/jobs "توسعه دهنده API" دبی
 ```
 
 ### Priority 4: Broader Technical / Consulting
@@ -62,19 +66,18 @@ site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
 Wider net for general technical roles.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs Python developer Dubai
+site:linkedin.com/jobs backend engineer Dubai
+site:linkedin.com/jobs technical consultant Python Dubai
+site:linkedin.com/jobs "برنامه نویس پایتون" دبی
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Configured location:
+- Dubai
+
+Only include roles located in Dubai.
 
 ## Language Filter
 
